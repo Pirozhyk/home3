@@ -1,11 +1,161 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 </head>
+
 <body>
-    <a href="/next.html">Next page</a>
-    
+    <header>
+        <a href="/next.html" title="Таблиці та списки">Таблиці та списки</a>
+    </header>
+    <h1>Соціологічне опитування
+    <p>Особливості вибору професії та пріоритети у житті</p></h1>
+    <p>Доброго дня!</p>
+     <p>Ми проводимо дане соціологічне опитування серед громадян України віком від 18-ти років</p>
+      <p>з метою складання загальної картини пріоритетів та особливостей вибору критеріїв роботи.</p>
+      <p>Дане соціологічне опитування не може бути анонімним, тому просимо вас вказувати ваші справжні</p>
+     <p>імена, дані, електронні адреси.</p>
+    <div id="contact-form">
+        <form action="https://formspree.io/loveacmilan27@gmail.com" method="POST">
+            <fieldset>
+                <legend><b>Загальна інформація</b></legend>
+                <label for="yourname">Ваше ім'я:</label>
+                <p><input type="text" id="yourname" name="Ім'я" placeholder="Ваше ім'я" required autofocus="autofocus"></p>
+
+                <label for="age">Ваш вік:</label>
+                <p><input type="number" id="age" name="Вік" placeholder="Ваш Вік" required></p>
+
+
+
+                <label for="client-email">Ваш емейл:</label>
+                <p><input id="client-email" type="email" name="Емейл" placeholder="Ваш емейл" required></p>
+
+                <label for="week">Дата проходження опитування:</label>
+                <p><input type="date" name="Дата проходження опитування" id="week" required></p>
+                <label for="city">Ваше рідне місто:</label>
+                <p><input type="text" name="Ваше рідне місто" id="city" placeholder="Ваше рідне місто" />
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend><b>Ваша стать</b></legend>
+                <input id="male" type="checkbox" name="Чоловік"> <label for="male">Чоловік</label>
+                <br>
+                <input id="female" type="checkbox" name="Жінка"> <label for="female">Жінка</label>
+                <br>
+            </fieldset>
+
+            <fieldset>
+                <legend><b>Ваша освіта</b></legend>
+                <input id="educationlow" type="checkbox" name="Незакінчена середня освіта"> <label for="educationlow">Незакінчена середня освіта</label>
+                <br>
+                <input id="educationmedium" type="checkbox" name="Середня освіта"> <label for="educationmedium">Середня освіта</label>
+                <br>
+                <input id="educationhigh" type="checkbox" name="Вища освіта"> <label for="educationhigh">Вища освіта</label>
+                <br>
+                <input id="noeducation" type="checkbox" name="Без освіти"> <label for="noeducation">Без освіти</label>
+            </fieldset>
+            <fieldset>
+                <legend><b>Чим займаєтесь у вільний від роботи/навчання час</b></legend>
+                <input id="sport" type="checkbox" name="Займаюсь спортом, веду активний спосіб життя"> <label for="sport">Займаюсь спортом, веду активний спосіб життя</label>
+                <br>
+                <input id="reading" type="checkbox" name="Читаю книжки,займаюсь саморозвитком"> <label for="reading">Читаю книжки, займаюсь саморозвитком</label>
+                <br>
+                <input id="games" type="checkbox" name="Граю комп'ютерні ігри"> <label for="games">Граю комп'ютерні ігри</label>
+                <br>
+                <input id="hangingout" type="checkbox" name="Відпочиваю з друзями"> <label for="hangingout">Відпочиваю з друзями</label>
+            </fieldset>
+            <fieldset>
+                <legend><b>Ваше матеріальне забезпечення</b></legend>
+                <input id="poor" type="checkbox" name="Матеріальне забезпечення низьке"> <label for="poor">Низьке</label>
+                <br>
+                <input id="okay" type="checkbox" name="Матеріальне забезпечення середнє"> <label for="okay">Середнє</label>
+                <br>
+                <input id="rich" type="checkbox" name="Матеріальне забезпечення високе"> <label for="rich">Високе</label>
+                <br>
+            </fieldset>
+            <fieldset>
+                <legend><b>Напишіть ім'я людини, яка вас надихає</b></legend>
+                <input type="text" name="Мене надихає" placeholder="Вас надихає...">
+                <br>
+            </fieldset>
+            <fieldset>
+                <legend><b>Про яку професію ви мрієте</b></legend>
+                <input type="text" name="Робота моєї мрії це" placeholder="Робота моєї мрії...">
+                <br>
+            </fieldset>
+            <fieldset>
+                <legend><b>Що для вас важливіше</b></legend>
+                <input id="family" type="checkbox" name="Для мене найважливіше"> <label for="family">Особисте життя</label>
+                <br>
+                <input id="job" type="checkbox"> <label for="job">Професійна кар'єра</label>
+                <br>
+                <input type="text" placeholder="Ваш варіант...">
+                <br>
+            </fieldset>
+            <fieldset>
+                <legend><b>Що для вас краще</b></legend>
+                <input id="jobwellpaid" type="checkbox" name="Для мене краще нудна, але прибуткова робота">
+                <label for="jobwellpaid">Нудна, але прибуткова робота</label>
+                <br>
+                <input id="interestingjob" type="checkbox" name="Для мене краще цікава,але менш прибуткова робота">
+                <label for="interestingjob">Цікава, але менш прибуткова робота</label>
+                <br>
+            </fieldset>
+            <fieldset>
+                <legend><b>Чи готові ви заради роботи покинути Батьківщину</b></legend>
+                <input id="leave" type="checkbox" name="Я готовий покинути Батьківщину і поїхати на заробітки">
+                <label for="leave">Я готовий покинути Батьківщину і поїхати на заробітки</label>
+                <br>
+                <input id="stay" type="checkbox" name="Я не готовий покинути Батьківщину">
+                <label for="stay">Я не готовий покинути Батьківщину</label>
+                <br>
+            </fieldset>
+            <fieldset>
+                <legend><b>Що для вас краще </b></legend>
+                <input id="plan" type="checkbox" name="Працювати за чітким графіком, мати чітко складений план дій">
+                <label for="plan">Працювати за чітким графіком, мати чітко складений план дій</label>
+                <br>
+                <input id="noplan" type="checkbox" name="Працювати з гнучким графіком, діяти по ситуації">
+                <label for="noplan">Працювати з гнучким графіком, діяти по ситуації</label>
+                <br>
+            </fieldset>
+            <fieldset>
+                <legend><b>Мені більше подобається</b></legend>
+                <input id="team" type="checkbox" name="Працювати в команді">
+                <label for="team">Працювати в команді</label>
+                <br>
+                <input id="alone" type="checkbox" name="Працювати самостійно">
+                <label for="alone">Працювати самостійно</label>
+                <br>
+            </fieldset>
+            <fieldset>
+                <legend><b>Ваші найкращі якості</b></legend>
+                <input type="text" name="Мої найкращі якості" placeholder="Мої найкращі якості" />
+            </fieldset>
+            <fieldset>
+                <legend><b>Ви шукаєте роботу/працюєте по спеціальності</b></legend>
+                <input id="qualification" type="checkbox" name="По спеціальності">
+                <label for="qualification">Працювати в команді</label>
+                <br>
+                <input id="noqualification" type="checkbox" name="Перекваліфіковуюсь">
+                <label for="noqualification">Перекваліфіковуюсь</label>
+                <br>
+            </fieldset>
+            <br>
+            <input type="submit" value="Send">
+            <input type="reset">
+
+        </form>
+    </div>
+
+    <footer>
+        <a href="/next.html" title="Таблиці та списки">Таблиці та списки</a>
+    </footer>
+
+
 </body>
+
 </html>
